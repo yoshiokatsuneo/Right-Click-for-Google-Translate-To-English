@@ -51,7 +51,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>-- -- GoogleTranslateToEnglish-- Ref:--   Google Translate client for Mac OS X--     http://superuser.com/questions/296421/google-translate-client-for-mac-os-x--on run {input, parameters}	-- set plaintext to input as «class utf8» 	set plaintext to input as text	set quoted_plaintext to quoted form of plaintext	-- display dialog quoted_plaintext	set percent_encoded_text to (do shell script "echo " &amp; quoted_plaintext &amp; "|perl -pe 's/(\\W)/\"%\" . unpack(\"H*\",$1)/eg;tr/\\r\\n//d'")	-- display dialog percent_encoded_text	set urltext to "http://translate.google.com/#|en|" &amp; percent_encoded_text	display dialog urltext	tell application "Safari"		make new document at end of documents		set URL of document 1 to urltext	end tellend run</string>
+					<string>-- -- GoogleTranslateToEnglish-- Ref:--   Google Translate client for Mac OS X--     http://superuser.com/questions/296421/google-translate-client-for-mac-os-x--on run {input, parameters}	-- set plaintext to input as «class utf8» 	set plaintext to input as text	set quoted_plaintext to quoted form of plaintext	-- display dialog quoted_plaintext	set percent_encoded_text to (do shell script "echo " &amp; quoted_plaintext &amp; "|perl -pe 's/(\\W)/\"%\" . unpack(\"H*\",$1)/eg;tr/\\r\\n//d'")	-- display dialog percent_encoded_text	set urltext to "http://translate.google.com/#|en|" &amp; percent_encoded_text	-- display dialog urltext	tell application "Safari"		make new document at end of documents		set URL of document 1 to urltext	end tellend run</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
